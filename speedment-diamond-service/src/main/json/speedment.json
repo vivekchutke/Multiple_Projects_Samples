@@ -1,0 +1,385 @@
+{
+  "config" : {
+    "speedmentVersion" : "Speedment:3.2.4",
+    "nameProtected" : false,
+    "expanded" : true,
+    "appId" : "b749f5aa-8f02-4239-9ec0-be7e01d14846",
+    "companyName" : "company",
+    "name" : "diamonds",
+    "packageLocation" : "src/main/java/",
+    "id" : "diamonds",
+    "dbmses" : [
+      {
+        "expanded" : true,
+        "port" : 3306,
+        "schemas" : [
+          {
+            "tables" : [
+              {
+                "nameProtected" : true,
+                "foreignKeys" : [
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "diamonds",
+                        "foreignSchemaName" : "diamonds",
+                        "expanded" : true,
+                        "name" : "meal_id",
+                        "foreignColumnName" : "id",
+                        "id" : "meal_id",
+                        "foreignTableName" : "mealse",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "FK7cdee7sgl8ylg1rk9qyjlxbts",
+                    "id" : "FK7cdee7sgl8ylg1rk9qyjlxbts",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "restEnableCUD" : true,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Boolean",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "celery",
+                    "id" : "celery",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Boolean",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "peanuts",
+                    "id" : "peanuts",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Boolean",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "sesame_seeds",
+                    "id" : "sesame_seeds",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Long",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "meal_id",
+                    "id" : "meal_id",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  }
+                ],
+                "enabled" : true,
+                "restEnableFilters" : true,
+                "expanded" : true,
+                "restEnabled" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "meal_id",
+                    "id" : "meal_id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "meal_id",
+                        "id" : "meal_id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "PRIMARY",
+                    "enabled" : true
+                  }
+                ],
+                "name" : "allergens",
+                "restEnableSkipLimit" : true,
+                "restCors" : "*",
+                "id" : "allergens",
+                "packageName" : "com.company.allergens",
+                "restEnableSorters" : true,
+                "restEnableTotal" : true
+              },
+              {
+                "nameProtected" : true,
+                "isView" : false,
+                "restEnableCUD" : true,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Long",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "carat",
+                    "id" : "carat",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "clarity",
+                    "id" : "clarity",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "color",
+                    "id" : "color",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "cut_type",
+                    "id" : "cut_type",
+                    "ordinalPosition" : 5,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "depth",
+                    "id" : "depth",
+                    "ordinalPosition" : 6,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "price",
+                    "id" : "price",
+                    "ordinalPosition" : 7,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "table_data",
+                    "id" : "table_data",
+                    "ordinalPosition" : 8,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "x_factor",
+                    "id" : "x_factor",
+                    "ordinalPosition" : 9,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "y_factor",
+                    "id" : "y_factor",
+                    "ordinalPosition" : 10,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Double",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "z_factor",
+                    "id" : "z_factor",
+                    "ordinalPosition" : 11,
+                    "enabled" : true
+                  }
+                ],
+                "enabled" : true,
+                "restEnableFilters" : true,
+                "expanded" : false,
+                "restEnabled" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "id",
+                        "id" : "id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "PRIMARY",
+                    "enabled" : true
+                  }
+                ],
+                "name" : "diamond",
+                "restEnableSkipLimit" : true,
+                "restCors" : "*",
+                "id" : "diamond",
+                "packageName" : "com.company.diamonds",
+                "restEnableSorters" : true,
+                "restEnableTotal" : true
+              },
+              {
+                "expanded" : true,
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Long",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "next_val",
+                    "id" : "next_val",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "hibernate_sequence",
+                "id" : "hibernate_sequence",
+                "enabled" : true
+              },
+              {
+                "nameProtected" : true,
+                "isView" : false,
+                "restEnableCUD" : true,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Long",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "description",
+                    "id" : "description",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "name",
+                    "id" : "name",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.math.BigDecimal",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "price",
+                    "id" : "price",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  }
+                ],
+                "enabled" : true,
+                "restEnableFilters" : true,
+                "expanded" : true,
+                "restEnabled" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "id",
+                        "id" : "id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "PRIMARY",
+                    "enabled" : true
+                  }
+                ],
+                "name" : "mealse",
+                "restEnableSkipLimit" : true,
+                "restCors" : "*",
+                "id" : "mealse",
+                "packageName" : "com.company.mealse",
+                "restEnableSorters" : true,
+                "restEnableTotal" : true
+              }
+            ],
+            "expanded" : true,
+            "name" : "diamonds",
+            "id" : "diamonds",
+            "enabled" : true
+          }
+        ],
+        "typeName" : "MySQL",
+        "ipAddress" : "127.0.0.1",
+        "name" : "diamonds",
+        "id" : "diamonds",
+        "enabled" : true,
+        "username" : "root"
+      }
+    ],
+    "enabled" : true
+  }
+}
